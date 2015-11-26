@@ -23,35 +23,22 @@ module.exports = function (app, express) {
 
 		//POST method is for saving all the tasks to the database,
 		api.post('/tasks', function (req, res) {
+			var task = {};
+			task.tasktype = req.body.tasktype;
 
-				var task = {};
-				task.tasktype = req.body.tasktype;
+			var taskObj = new Task(task);
+			taskObj.taskinfo = req.body.taskInfo;
 
-				
-				//category        : [req.body.category],
-
-				
-
-				task.taskinfo = [];
-				for (var i = 0; i < req.body.taskInfo.length; i++) {
-						console.log(i);
-						var taskInfo = new TaskInfo(req.body.taskInfo[i]);
-						task.taskinfo.push(taskInfo);
-						console.log(task);
+			taskObj.save(function (err) {
+				if (err) {
+					res.send(err);
+					return;
 				}
+				res.json({
+					message: 'Task has been created'
+				})
 
-				var taskObj = new Task(task);
-
-				taskObj.save(function (err) {
-						if (err) {
-								res.send(err);
-								return;
-						}
-						res.json({
-								message: 'Task has been created'
-						})
-
-				});
+			});
 		});
 
 
