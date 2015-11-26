@@ -1,7 +1,0 @@
-Screenshot are placed in the root folder as a proof that backend is working fine with postman app, which you can download from google app store and test the backend.
-
-The problem is while passing value of subdocumented array field from client side. You can check it by typing in browser "http://localhost:8000/#/"
-
-The same problem is happening while showing those subdocumented array field values to client by running get api method.
-
-Thank You.
