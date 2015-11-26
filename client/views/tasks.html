@@ -1,0 +1,30 @@
+<h2 class="sub-header">Tasks</h2>
+      <div class="table-responsive" ng-init="getTasks()">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Task Type</th>
+              <th>IsActive</th>
+              <th>Task Object</th>
+              <th>Task Details</th>
+              <th>Is Completed</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="task in tasks">
+                <td>{{task._id}}</td>
+                <td>{{task.tasktype}}</td>
+                <td>{{task.taskInfo.isactive}}</td>
+                <td>{{task.taskInfo.taskobject}}</td>
+                <td>{{task.taskInfo.taskdetails}}</td>
+                <td>{{task.taskInfo.iscompleted}}</td>
+                <td><a href="#/tasks/details/{{task._id}}" class="btn btn-primary">Details</a> <a href="#/tasks/edit/{{task._id}}" class="btn btn-default">Edit</a> <button ng-click="deleteTask(task._id)" class="btn btn-danger">Delete</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

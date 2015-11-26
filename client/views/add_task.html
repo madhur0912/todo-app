@@ -1,0 +1,31 @@
+<h2 class="sub-header">Add Task</h2>
+<form ng-submit="addTask()">
+   <div class="form-group">
+    <label>Task Type</label>
+    <input type="text" class="form-control" name="tasktype" ng-model="task.tasktype" placeholder="tasktype">
+  </div>
+ 
+   <!--   these below fields are array field, it uses subdocumented mongodb schema (or complex schema) --> 
+ <div class="form-group">
+    <label>isactive</label>
+    <input type="text" class="form-control" name="isactive" ng-model="task.taskInfo.isactive" placeholder="Enter either '0' or '1'">
+  </div>
+  <div class="form-group">
+    <label>taskobject</label>
+    <input type="text" class="form-control" name="taskobject" ng-model="task.taskInfo.taskobject" placeholder="Enter objective">
+  </div>
+  <div class="form-group">
+    <label>taskdetails</label>
+    <input type="text" class="form-control" name="taskdetails" ng-model="task.taskInfo.taskdetails" placeholder="Enter task details">
+  </div> 
+  <div class="form-group">
+    <label>iscompleted</label>
+    <input type="text" class="form-control" name="iscompleted" ng-model="task.taskInfo.iscompleted" placeholder="Enter either '0' or '1'">
+  </div>
+  
+   <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+
+
+ 

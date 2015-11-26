@@ -1,0 +1,28 @@
+<div ng-init="getTask()">
+	<div class="row">
+		<div class="col-md-8">
+			<h3>{{task._id}} {{task.tasktype}}</h3>
+			<ul class="list-group">
+				<li class="list-group-item">{{taskinfo.isactive}}</li>
+				<li class="list-group-item">{{taskinfo.taskobject}}</li>
+				<li class="list-group-item">{{taskinfo.taskdetails}}</li>
+				<li class="list-group-item">{{taskinfo.iscompleted}}</li>
+			</ul>
+		</div>
+		<div class="col-md-4">
+			Creation Date: {{task.createdon}}<br>
+			<h3>Updation Date: {{task.updatedon}}</h3>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-md-12">
+			<h4>Task Info</h4>
+			<ul class="list-group">
+				<li class="list-group-item">Task: {{task.tasktype}}</li>
+				<li class="list-group-item">Task: {{task.tasktype}}</li>
+				<li class="list-group-item">Task: {{task.tasktype}}</li>
+			</ul>
+		</div>
+	</div>
+</div>
