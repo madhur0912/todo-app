@@ -16,12 +16,4 @@ You are not only helping me but helping thousands of students who are seeking so
 
 About application: This is simple To Do application based on MEAN Stack technology {MEAN is Mongodb,Express,Angular,Node}.
 
-How it is different from other sample applications ? : It help to understand 
-
-a) subdocumented structure modeling in mongodb which hasnot been taught anywhere on interent as either paid or free course.
-b) It teaches to use gulp, node, angular, mongodb, express, bower, all of these in single application.
-c) after trying your hand on it you will be able to create sample applications of yours.
-
-About me: I am a learner. I love to learn and work on new technologies. These moments i have dedicated to MEAN Stack, & trying to complete this sample todo application. 
-
 Thank You.
