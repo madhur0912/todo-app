@@ -13,15 +13,15 @@
             </tr>
           </thead>
           <tbody>
-            <tr ng-repeat="task in tasks">
-                <td>{{task._id}}</td>
-                <td>{{task.tasktype}}</td>
-                <td>{{task.taskInfo.isactive}}</td>
-                <td>{{task.taskInfo.taskobject}}</td>
-                <td>{{task.taskInfo.taskdetails}}</td>
-                <td>{{task.taskInfo.iscompleted}}</td>
-                <td><a href="#/tasks/details/{{task._id}}" class="btn btn-primary">Details</a> <a href="#/tasks/edit/{{task._id}}" class="btn btn-default">Edit</a> <button ng-click="deleteTask(task._id)" class="btn btn-danger">Delete</a></td>
-            </tr>
+              <tr ng-repeat="task in tasks">
+                  <td>{{task._id}}</td>
+                  <td>{{task.tasktype}}</td>
+                  <td>{{task.taskinfo[0].isactive}}</td>
+                  <td>{{task.taskinfo[0].taskobject}}</td>
+                  <td>{{task.taskinfo[0].taskdetails}}</td>
+                  <td>{{task.taskinfo[0].iscompleted}}</td>
+                  <td><a href="#/tasks/details/{{task._id}}" class="btn btn-primary">Details</a> <a href="#/tasks/edit/{{task._id}}" class="btn btn-default">Edit</a> <button ng-click="deleteTask(task._id)" class="btn btn-danger">Delete</a></td>
+              </tr>
           </tbody>
         </table>
       </div>
